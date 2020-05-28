@@ -5,9 +5,9 @@ source /gpfs/software/wmla-p10a117/wmla_anaconda/b0p036a/anaconda/envs/powerai16
 conda activate base
 
 cd wmla-learning-path
-git checkout -B master origin/master
-
+git git fetch
+git reset --hard origin/master
 # Stop start jupyter
 ps -ef |  grep -i [j]upyter-notebook.* | grep `whoami` | sed -e "s/ \{1,\}/ /g" | cut -d " " -f2 | xargs -i kill {}
-nohup jupyter notebook --ip=0.0.0.0 --allow-root --port=$1 --no-browser --NotebookApp.token='aicoc' --NotebookApp.password='' &
+nohup jupyter notebook --ip=0.0.0.0 --allow-root --port=$1 --no-browser --NotebookApp.token='aicoc' --NotebookApp.password='' > classlog.out &
 
