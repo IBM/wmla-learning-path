@@ -1,4 +1,4 @@
-ps -ef | grep `whoami` | grep -i [j]upyter.* | sed -e "s/ \{1,\}/ /g" | cut -d " " -f2 | xargs -i kill {}
+ps -ef |  grep -i [j]upyter.* | grep `whoami` | sed -e "s/ \{1,\}/ /g" | cut -d " " -f2 | xargs -i kill {}
 
 [[ -d wmla-learning-path ]] || git https://github.com/IBM/wmla-learning-path.git
 export PATH=/gpfs/software/wmla-p10a117/wmla_anaconda/b0p036a/anaconda/bin:$PATH
