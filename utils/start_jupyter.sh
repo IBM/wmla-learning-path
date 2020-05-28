@@ -1,6 +1,6 @@
 
 # User1 setup in $HOME
-[[ -d wmla-learning-path ]] || git https://github.com/IBM/wmla-learning-path.git
+[[ -d wmla-learning-path ]] || git clone https://github.com/IBM/wmla-learning-path.git
 export PATH=/gpfs/software/wmla-p10a117/wmla_anaconda/b0p036a/anaconda/bin:$PATH
 source /gpfs/software/wmla-p10a117/wmla_anaconda/b0p036a/anaconda/envs/powerai162/./etc/profile.d/conda.sh
 conda activate base
@@ -14,7 +14,7 @@ nohup jupyter notebook --ip=0.0.0.0 --allow-root --port=$1 --no-browser --Notebo
 
 # User2 setup in $HOME/user2
 
-[[ -d user2/wmla-learning-path ]] || cd user2;git https://github.com/IBM/wmla-learning-path.git
+[[ -d user2/wmla-learning-path ]] || cd user2;git clone https://github.com/IBM/wmla-learning-path.git
 
 cd ~/user2/wmla-learning-path
 git fetch
