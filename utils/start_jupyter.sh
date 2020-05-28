@@ -13,7 +13,7 @@ ps -ef |  grep -i [j]upyter-notebook.* | grep `whoami` | sed -e "s/ \{1,\}/ /g" 
 nohup jupyter notebook --ip=0.0.0.0 --allow-root --port=$1 --no-browser --NotebookApp.token='aicoc' --NotebookApp.password='' > classlog.out &
 
 # User2 setup in $HOME/user2
-
+cd ~
 [[ -d user2/wmla-learning-path ]] || mkdir user2; cd user2;git clone https://github.com/IBM/wmla-learning-path.git
 
 cd ~/user2/wmla-learning-path
