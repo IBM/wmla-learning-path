@@ -5,7 +5,7 @@ source /gpfs/software/wmla-p10a117/wmla_anaconda/b0p036a/anaconda/envs/powerai16
 conda activate base
 
 cd wmla-learning-path
-git git fetch
+git fetch
 git reset --hard origin/master
 # Stop start jupyter
 ps -ef |  grep -i [j]upyter-notebook.* | grep `whoami` | sed -e "s/ \{1,\}/ /g" | cut -d " " -f2 | xargs -i kill {}
