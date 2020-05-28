@@ -1,4 +1,3 @@
-ps -ef |  grep -i [j]upyter-notebook.* | grep `whoami` | sed -e "s/ \{1,\}/ /g" | cut -d " " -f2 | xargs -i kill {}
 
 [[ -d wmla-learning-path ]] || git https://github.com/IBM/wmla-learning-path.git
 export PATH=/gpfs/software/wmla-p10a117/wmla_anaconda/b0p036a/anaconda/bin:$PATH
@@ -7,7 +6,8 @@ conda activate base
 
 cd wmla-learning-path
 git pull origin master
-jupyter contrib nbextension install --user
-sleep 5
+
+# Stop start jupyter
+ps -ef |  grep -i [j]upyter-notebook.* | grep `whoami` | sed -e "s/ \{1,\}/ /g" | cut -d " " -f2 | xargs -i kill {}
 nohup jupyter notebook --ip=0.0.0.0 --allow-root --port=$1 --no-browser --NotebookApp.token='aicoc' --NotebookApp.password='' &
 
