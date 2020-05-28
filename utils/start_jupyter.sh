@@ -6,6 +6,7 @@ conda activate base
 cd wmla-learning-path
 git pull origin master
 jupyter contrib nbextension install --user
+sleep 5
 ps -ef | grep `whoami` | grep -i [j]upyter.* | sed -e "s/ \{1,\}/ /g" | cut -d " " -f2 | xargs -i kill {}
 nohup jupyter notebook --ip=0.0.0.0 --allow-root --port=$1 --no-browser --NotebookApp.token='aicoc' --NotebookApp.password='' &
 
