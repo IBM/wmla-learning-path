@@ -10,10 +10,10 @@ The technologies work in concert, as follows:
 
 
 ## Description:
-In this article, you will:
+In this article, you will learn how to:
 
 1.  Configure and enable the link between IBM® Watson™ Studio in IBM Cloud Pak for Data and IBM Watson Machine Learning Accelerator
-2.  Options for submitting Deep Learning Workload from IBM® Watson™ Studio to IBM Watson Machine Learning Accelerator:
+2.  Methods for submitting Deep Learning Workload from IBM® Watson™ Studio to IBM Watson Machine Learning Accelerator:
     1. Automate model hyperparameter search via Watson Machine Learning Accelerator Rest API
     2. Distribute training with Elastic Distributed Training via IBM Deep Learning Experiment UI
     3. Train model and deploy via Watson ML Python Client
@@ -32,7 +32,7 @@ There are two scenarios:
 
 ### How can I use it?
 
-1. Watson ML Accelerator Rest API - available for both scenario 1 & 2:
+1. Watson ML Accelerator Rest API Direct - available for both scenario 1 & 2:
 - Jupyter Notebook accessex the WMLA cluster via a network connection with Watson ML Accelerator API under the covers.   
 This Jupyter notebook can be on any platform: local to your laptop, or part of a wider set up as Watson Studio in Cloud Pak for Data.
 
