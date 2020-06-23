@@ -22,15 +22,14 @@ In this article, you will learn how to:
 To install and configure IBM Watson Studio 2.0.2 and IBM Watson Machine Learning Accelerator, follow the steps in this run book.
 
 
-## How can I use it?  Depends on your set up
+## How can I use it? 
 
-There are multiple methods for taking advantage of IBM Watson Machine Learning Accelerator and depends on your WMLA set up.
+Depends on your WMLA set up,  there are multiple methods for taking advantage of IBM Watson Machine Learning Accelerator:
 
-There are two scenarios:
-1. standalone WMLA cluster scenario.   
-2. linkage between IBM Cloud Pak for Data and Watson Machine Learning Accelerator.
 
-### How can I use it?
+
+The key differences between these methods are the underlying access to WMLA.  It might be Watson ML Accelerator API direct,  or via Watson ML API.
+
 
 1. Watson ML Accelerator Rest API Direct - available for both scenario 1 & 2:
 - Jupyter Notebook accessex the WMLA cluster via a network connection with Watson ML Accelerator API under the covers.   
