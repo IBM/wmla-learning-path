@@ -47,4 +47,8 @@ git reset --hard origin/master
 # kill existing jupyter
 ps -ef |  grep -i [j]upyter-notebook.* | grep port=$1 | sed -e "s/ \{1,\}/ /g" | cut -d " " -f2 | xargs -i kill {}
 # Startup 
+export PATH=/gpfs/software/wmla-p10a117/wmla_anaconda/b0p036a/anaconda/bin:$PATH
+source /gpfs/software/wmla-p10a117/wmla_anaconda/b0p036a/anaconda/envs/powerai162/./etc/profile.d/conda.sh
+conda activate base
+#
 nohup jupyter notebook --ip=0.0.0.0 --allow-root --port=$user_port --no-browser --NotebookApp.token='aicoc' --NotebookApp.password=''  &> classlog.out &
