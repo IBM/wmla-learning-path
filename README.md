@@ -1,7 +1,10 @@
 # wmla-learning-path
 
-This page will document the workflow for the AICoC QC .... more to come
-new fixes.
+This repo contains examples/tutorials for Watson Machine Learning Accelerator
 
 
-adsf
+Usage Mode | Directory
+------------ | -------------
+Examples from DLI UI | tutorials-ui
+Examples using WMLA API | tutorials-notebooks
+
