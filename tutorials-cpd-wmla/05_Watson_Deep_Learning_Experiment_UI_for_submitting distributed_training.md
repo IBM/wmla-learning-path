@@ -16,12 +16,13 @@ b. A training definition that contains model building code and metadata about ho
 
 c. A training execution command. The execution command must reference the Python code, pass the names of the training files, and can optionally specify metrics. The tutorial includes these components and instructions for downloading them and adding them to your experiment.
 
+<img src="https://github.com/IBM/wmla-learning-path/blob/master/shared-images/CPD-WMLA_4_ExperimentUI.png">
+
 ## Environments
 
-- IBM Watson Studio Local on Cloud Pak for Data (x86)
-- IBM Watson Machine Learning on Cloud Pak for Data (x86)
-- IBM Spectrum Conductor on Power
-- IBM Watson Machine Learning Accelerator on Power
+- IBM Watson Studio Local on Cloud Pak for Data
+- IBM Watson Machine Learning on Cloud Pak for Data
+- IBM Watson Machine Learning Accelerator
 ​
 **Pre-Requisites:** Before completing the CP4D/WSL/WML/WMLA validation steps, please ensure connectivity is configured correctly according to the document Connecting IBM Watson Studio Local, IBM Watson Machine Learning and IBM Watson Machine Learning Accelerator.
 
@@ -103,7 +104,7 @@ Now the second data scientist also submits a job when the first is not finished 
 
     c. Repeat steps 8-11.
 
-With both jobs that are running, the dynamic GPU allocation will occur automatically. Since there are four nodes, the EDT automatically distributes them evenly among the two jobs.
+With both jobs that are running, the dynamic GPU allocation will occur automatically. The second data scientist will not be blocked or starved from GPUs.   Since there are four nodes, the EDT automatically distributes them evenly among the two jobs.
 
 To view the results, go to IBM Spectrum Computing Cluster Management Console. Go to **Workload > Instance groups**, then click on the **Applications** tab.
 
