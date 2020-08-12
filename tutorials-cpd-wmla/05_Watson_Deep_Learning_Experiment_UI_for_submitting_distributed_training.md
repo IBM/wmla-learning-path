@@ -21,9 +21,9 @@ c. A training execution command. The execution command must reference the Python
 - IBM Watson Studio Local on Cloud Pak for Data 
 - IBM Watson Machine Learning on Cloud Pak for Data
 - IBM Spectrum Conductor 
-- IBM Watson Machine Learning Acceleratorf
-​
-**Pre-Requisites:** Before completing the CP4D/WSL/WML/WMLA validation steps, please ensure connectivity is configured correctly according to the document Connecting IBM Watson Studio Local, IBM Watson Machine Learning and IBM Watson Machine Learning Accelerator.
+- IBM Watson Machine Learning Accelerator
+
+- Pre-Requisites:** Before completing the CP4D/WSL/WML/WMLA validation steps, please ensure connectivity is configured correctly according to the document Connecting IBM Watson Studio Local, IBM Watson Machine Learning and IBM Watson Machine Learning Accelerator.
 
 ## Submit two Deep Learning experiments
 
